@@ -1,0 +1,39 @@
+.show-hidden-classes .sr-only {
+  position: relative;
+  width: initial;
+  height: initial;
+  padding: initial;
+  margin: initial;
+  overflow: visible;
+  clip: auto;
+  border: none;
+  white-space: normal;
+  outline: 2px dashed lightgreen;
+}
+
+.show-hidden-classes .hidden{
+  display: inline-block !important;
+  position: relative;
+  outline: 2px dashed lightcoral;
+}
+.show-hidden-classes .hidden::after,
+.show-hidden-classes .sr-only::after{
+  position: absolute;
+  top: -30px;
+  right: -5px;
+  color: cadetblue;
+  background: white;
+  font-size: 15px;
+  border-radius: 100vw;
+  padding: 0px 10px 2px 10px;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.show-hidden-classes .hidden::after {
+  content: '.hidden';
+}
+.show-hidden-classes .sr-only::after {
+  content: '.sr-only';
+}
