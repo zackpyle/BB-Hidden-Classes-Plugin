@@ -20,7 +20,8 @@ if(! class_exists ( 'hidden_class_toggle'))
     function __construct(){
 
       add_filter( 'wp_enqueue_scripts' , array($this,'hidden_class_toggle_scripts'), 20 , 2 );
-
+      
+      // Add BB shortcut
       add_filter( 'fl_builder_keyboard_shortcuts', function( $shortcuts ) {
         $shortcuts['hiddenClassToggle'] = array(
           'label' => __( 'Toggle Hidden Class Visability', 'hiddenClassToggle'),
