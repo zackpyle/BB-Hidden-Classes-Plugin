@@ -1,4 +1,4 @@
-# BB Hidden Classes
+# Beaver Builder Hidden Classes
 
 This wordpress plugin is an addon to Beaver Builder. It lets you toggle the visibility of items with the classes of .hidden and .sr-only when you're inside the Beaver Builder editor.
 
